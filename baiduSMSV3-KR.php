@@ -1,5 +1,17 @@
 <?php
-// Usage: php baiduSMSV3-KR.php < seedwordFile > log
+/**
+*
+* 根据种子词批量拓展相关关键词词库！使用前请先在inc/CommonService.php中填入已开通百度搜索推广API的账号名、密码及token。
+* 返回结果为csv格式，需自行去重、合并。
+*
+* 使用方法: php baiduSMSV3-KR.php < seedwordFile > log
+*
+* @author 道哥（http://www.seodug.com/）
+*
+* 百度搜索推广API V3开发文档： 
+* @link http://dev2.baidu.com/sms_zh/uploads/en/2015/4/V3cn_2015-04-23-23163453.pdf
+*
+*/
 error_reporting(E_ALL ^ E_NOTICE);
 
 require_once 'inc/sms_v3_KRService.php';
