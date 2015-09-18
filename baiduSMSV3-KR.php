@@ -2,7 +2,7 @@
 /**
 *
 * 根据种子词批量拓展相关关键词词库！使用前请先在inc/CommonService.php中填入已开通百度搜索推广API的账号名、密码及token。
-* 返回结果为csv格式，需自行去重、合并。
+* 返回结果为GBK编码的csv格式，需自行转换编码、去重、合并等。
 *
 * 使用方法: php baiduSMSV3-KR.php < seedwordFile > log
 *
