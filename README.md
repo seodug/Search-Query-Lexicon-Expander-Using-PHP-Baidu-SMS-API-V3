@@ -15,7 +15,7 @@ Search Query Lexicon Expander Using PHP Baidu SMS API V3 with following features
 
 1. Use async interface instead to support large amount of seedwords.
 2. Limit the request rate at 20/min
-3. Use single thread to download the returned csv files by default. Change to multi thread as you like. 
+3. Use single thread to download the returned csv files by default. Change to multi threads as you like. 
 
 # About Author
 Wanye Chao (Blog: http://www.seodug.com/)
