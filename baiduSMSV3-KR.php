@@ -94,14 +94,13 @@ $file=fopen("filePaths.txt","w");
 fwrite($file,implode("\n", array_filter($filePathArr)));
 fclose($file);
 
-$dir=dirname(__FILE__).'/csvSrc/';
 foreach ($filePathArr as $url) {
 	preg_match('/reportid=([\w\d]+)/i', $url, $matches);
 	$filename=$matches[1].".csv";
 	$timestamp=time()+360000;
 	$url=preg_replace('/timestamp=([\w\d]+)/i', "timestamp=".$timestamp, $url);
 
-	$downFile=fopen($dir.$filename, 'w');
+	$downFile=fopen($filename, 'w');
 	$ch=curl_init($url);
 	curl_setopt($ch, CURLOPT_FILE, $downFile);
 	curl_exec($ch);
